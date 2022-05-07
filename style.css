@@ -134,11 +134,16 @@ img {
   .container {
     display: grid;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
   }
   .box {
     width: 100%;
+    margin: 0;
   }
   .adamasmaca {
     width: 100%;
+    margin: 0;
   }
 }
