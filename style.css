@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.3em;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.838);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 0.2rem;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 50%;
+}
+#title {
+  background-color: rgba(23, 25, 26, 0.274);
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding: 1.2rem;
+}
+#message1 {
+  background-color: rgb(158, 215, 244);
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  padding: 0.7rem;
+  color: black;
+}
+
+.adamasmaca {
+  display: grid;
+  grid-template-columns: auto;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.box > * {
+  margin-bottom: 1.3rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(16, 49, 64);
+  color: white;
+}
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(183, 64, 0);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.6;
+  transition: all 500ms ease;
+}
+#newGame {
+  background-color: darkgreen;
+}
+
+p {
+  text-align: left;
+  width: 33%;
+  background-color: rgb(158, 215, 244);
+  color: rgb(142, 11, 11);
+  border-radius: 4px;
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+.msg {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  font-size: 18px;
+
+  text-align: left;
+  padding: 0.7rem;
+  color: rgb(142, 11, 11);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  background-color: rgb(158, 215, 244);
+}
+
+::placeholder {
+  font-size: 17px;
+}
+img {
+  width: 100%;
+  background: black;
+}
+.game {
+  display: none;
+}
+.game1 {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  .adamasmaca {
+    width: 100%;
+  }
+}

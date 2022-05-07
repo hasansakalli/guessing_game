@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+      <div class="container">
+          
+          <div class="box">
+            <p id="title" >Tahmin Oyunu</p>
+        <input
+          id="inputNumber"
+          type="number"
+          placeholder="1 ila 100 arası bir sayı giriniz."
+        />
+        <div class="sonuc">
+            <p id="message1"></p>
+          </div>
+        <div class="buttons flex">
+          <button id="guess" onclick="start()">Tahmin Et</button>
+          <button id="newGame" onclick="newGame()">Yeni Oyun</button>
+        </div>
+
+        <div class="msg">
+          <p>Tahminleriniz:</p>
+          <span id="message2"></span>
+        </div>
+        <div class="msg">
+          <p>Tahmin sayınız:</p>
+          <span id="message3"></span>
+          
+        </div>
+    </div>
+        <div class="adamasmaca">
+            <img class="game1 game" src="images/game1.jpg" alt="" />
+            <img class="game2 game" src="images/game2.jpg" alt="" />
+            <img class="game3 game" src="images/game3.jpg" alt="" />
+            <img class="game4 game" src="images/game4.jpg" alt="" />
+            <img class="game5 game" src="images/game5.jpg" alt="" />
+            <img class="game6 game" src="images/game6.jpg" alt="" />
+            <img class="game7 game" src="images/game7.jpg" alt="" />
+          </div>
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
