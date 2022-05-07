@@ -5,7 +5,8 @@ const message3 = document.getElementById("message3");
 deneme = 0;
 tahmin = [];
 randomNumber = 0;
-function newGame() {
+
+window.addEventListener("load",function newGame() {
  
   var randomNumber = Math.floor(Math.random() * 101);
   yeni = parseInt(randomNumber);
@@ -14,7 +15,7 @@ function newGame() {
   message1.innerHTML = ""
   message2.innerHTML = "" 
   message3.innerHTML = "" 
-}
+})
 
 function start() {
   const inputNumber = document.querySelector("#inputNumber").value;
